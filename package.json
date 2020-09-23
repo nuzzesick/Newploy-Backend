@@ -1,0 +1,20 @@
+{
+  "name": "newploy-api",
+  "version": "1.0.0",
+  "description": "Your news about programming and tech-stuff you already love, in one place.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "nuzze",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  }
+}
