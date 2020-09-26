@@ -13,4 +13,4 @@ const port = process.env.PORT || 4000;
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
 
-app.listen(port);
+app.listen(port, '0.0.0.0');
