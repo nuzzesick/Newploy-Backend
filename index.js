@@ -8,7 +8,7 @@ connectDB();
 
 app.use(express.json({ extend: true }));
 
-const port = process.env.PORT || 4000;
+const port = 4000;
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
