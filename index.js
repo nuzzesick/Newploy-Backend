@@ -6,7 +6,12 @@ const app = express();
 
 connectDB();
 
+app.use(express.json({ extend: true }));
+
 const port = process.env.PORT || 4000;
+
+app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
 
 app.listen(port, () => {
   console.log('servidor corriendo');
