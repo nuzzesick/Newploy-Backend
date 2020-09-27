@@ -27,7 +27,7 @@ exports.userAuthenticate = async (req, res) => {
       expiresIn: 3600
     }, (error, token) => {
       if (error) throw error;
-      res.json({token});
+      res.json({email, token});
     });
   } catch(error) {
     console.log(error)
