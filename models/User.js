@@ -25,10 +25,6 @@ const UsersSchema = mongoose.Schema({
   date: {
     type: Date,
     default: Date.now()
-  },
-  profilePhoto: {
-    type: String,
-    default: 'https://facebook.com/asjds/'
   }
 });
 
